@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, Stars } from '@react-three/drei';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
@@ -59,7 +59,10 @@ function StarBirth({ getTimelineTime }) {
     if (haloRef.current) {
       const size = 0.48 + charge * 0.7 + ignition * 5.5;
       haloRef.current.scale.set(size, size, 1);
-      haloRef.current.material.opacity = Math.max(0, 0.16 + charge * 0.2 + ignition * 0.62 - dissolve * 0.98);
+      haloRef.current.material.opacity = Math.max(
+        0,
+        0.16 + charge * 0.2 + ignition * 0.62 - dissolve * 0.98
+      );
       haloRef.current.visible = dissolve < 0.995;
     }
 
@@ -70,7 +73,10 @@ function StarBirth({ getTimelineTime }) {
     }
 
     if (lightRef.current) {
-      lightRef.current.intensity = 0.6 + charge * 6 + ignition * 22 - dissolve * 24;
+      lightRef.current.intensity = Math.max(
+        0,
+        0.6 + charge * 6 + ignition * 22 - dissolve * 24
+      );
       lightRef.current.distance = 5 + ignition * 7;
     }
   });
@@ -134,7 +140,9 @@ function StarrModel({ getTimelineTime, onReady, onError }) {
           const materials = Array.isArray(child.material) ? child.material : [child.material];
           materials.filter(Boolean).forEach((material) => {
             if ('envMapIntensity' in material) material.envMapIntensity = 1.15;
-            if ('roughness' in material) material.roughness = Math.max(0.38, material.roughness ?? 0.55);
+            if ('roughness' in material) {
+              material.roughness = Math.max(0.38, material.roughness ?? 0.55);
+            }
             if (!material.map && material.color) material.color = new Color('#f3dfb0');
             material.needsUpdate = true;
           });
@@ -254,17 +262,18 @@ function CinematicWorld({ lowPower, reducedMotion, onModelReady, onModelError, o
   const [ready, setReady] = useState(false);
   const [interactive, setInteractive] = useState(false);
 
-  const getTimelineTime = () => {
+  const getTimelineTime = useCallback(() => {
     const elapsed = clock.getElapsedTime();
     if (!ready || readyAtRef.current === null) return Math.min(elapsed, HOLD_TIME);
     return HOLD_TIME + (elapsed - readyAtRef.current);
-  };
+  }, [clock, ready]);
 
-  const markReady = () => {
+  const markReady = useCallback(() => {
+    if (readyAtRef.current !== null) return;
     readyAtRef.current = clock.getElapsedTime();
     setReady(true);
     onModelReady();
-  };
+  }, [clock, onModelReady]);
 
   useFrame(() => {
     const time = getTimelineTime();
