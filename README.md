@@ -43,3 +43,14 @@ npm run preview
 ## Next animation milestone
 
 When a rigged model is available, replace or update `AxStarr.glb` and add a named arm-opening animation clip. The existing birth, hover, camera, lighting, and interaction systems can remain in place.
+
+## Interactive Asset Lab
+
+The new `/assets-lab/` route contains the StarrSeed, a living navigation network, six interactive domain objects, floating terrain, celestial UI primitives and a nine-chapter cinematic prototype. See [the lab guide](docs/assets-lab/README.md), [asset catalog](docs/assets-lab/asset-catalog.json), and [source review sheet](docs/assets-lab/previews/starrtree-source-study.jpg).
+
+```sh
+npm run lab:verify
+npm run build
+```
+
+The lab is independent of the opening model. Its still fallbacks and source geometry are included. Browser and physical iPhone validation remain pending; see the lab guide for the checks and current test evidence.

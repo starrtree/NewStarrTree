@@ -1,0 +1,30 @@
+name: Verify Asset Lab
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/assets/lab/**'
+      - 'package*.json'
+      - 'vite.config.js'
+      - '.github/workflows/assets-lab-checks.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lab:verify
+      - run: npm run build
+      - name: Check direct lab entry and still fallbacks
+        run: |
+          test -s dist/assets-lab/index.html
+          test -s dist/assets/lab/seed.webp
+          test -s dist/assets/lab/network.webp
+          test -s docs/assets-lab/verification.json
