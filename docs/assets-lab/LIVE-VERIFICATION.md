@@ -20,6 +20,14 @@ The first publication was merged in PR #1. GitHub Actions run `34296144215` succ
 
 This cloud browser reports WebGL as disabled. R3F renderer initialization rejected asynchronously and left the first preview empty; selecting Still manually recovered it. The follow-up adds a WebGL 2 capability check before mounting the lazy 3D scene, so unsupported browsers start in image view. Seed activation and journey chapters now select corresponding fallback images too. The temporary probe context is released immediately.
 
+The follow-up deployment, Actions run `34296598710`, passed all build and deployment steps, including waiting for legacy Pages publishing. After reloading the public URL:
+
+- Auto quality immediately displayed the seed image and an explanatory status, without mounting a failed renderer.
+- Activating the seed selected `seed-open.webp`.
+- Worlds selected `terrain.webp`; Human creation selected `domain-engineering.webp`.
+- Selecting Full quality on this unsupported browser safely retained image view.
+- No application-origin errors appeared after this reload. Browser-extension metadata errors were separate from the app.
+
 ## Limits
 
 This screenshot shows a browser displaying an image fallback. It is not evidence of GPU rendering or measured 3D performance. Physical iPhone behavior, full 3D interaction, sustained FPS, sound output, orientation permission and responsive-device layouts remain to be verified. The source-renderer tests and native EGL studies are documented separately.
