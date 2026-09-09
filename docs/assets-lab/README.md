@@ -4,6 +4,8 @@ First working prototype batch for **NewStarrTree**, isolated at `/assets-lab/`. 
 
 ## Open it
 
+**[Open the live Asset Lab](https://starrtree.github.io/NewStarrTree/assets-lab/)**
+
 ```sh
 npm ci
 npm run dev
@@ -97,6 +99,10 @@ npm run lab:previews
 
 The optional preview script uses native EGL on exported Three geometry. It compiles the custom GLSL after a GLSL 330 syntax conversion; standard materials use reference lighting. Those images are source studies and still fallbacks, **not browser screenshots**.
 
-In this Work session, the cloud browser URL security policy blocked the preview. No live browser, audible playback, orientation permission, FPS stability, responsive screenshot or physical iPhone crash test is claimed. The code and shaders were tested through the scene renderer and native rendering instead.
+The local preview was blocked by the cloud browser URL policy. After publishing, the public GitHub Pages lab was accessible and its HTML controls and image previews were tested in Chrome. This browser has WebGL disabled, so GPU rendering, sustained FPS, audible playback, device orientation, responsive layouts and physical iPhone behavior remain unverified. See [live browser evidence](LIVE-VERIFICATION.md). The code and shaders were also tested through the scene renderer and native rendering.
 
 Before homepage integration, open the branch build on desktop and a physical iPhone 13 Pro Max. Verify seed activation, six branch selections, growth and chapter scrubbing, muted-by-default audio and sound response, pause, reduced motion, tilt allow/deny, portrait/landscape layout, background/resume and still mode. Spend five minutes moving between all systems; record the live counters and any context loss. Confirm branch geometry remains readable and the design is approved. This remaining device gate matters more than another decorative asset.
+
+## Publishing
+
+The repo launch link opens the built `/assets-lab/` page. The GitHub Pages workflow builds and verifies the app before deploying `dist`. The repository also currently triggers legacy Jekyll publishing from its branch; the app deployment waits for that run to finish so it cannot subsequently replace the compiled app with raw source. For a single publishing path, a repository administrator can set Settings → Pages → Build and deployment → Source to **GitHub Actions**. The GitHub connector in this session does not expose Pages administration.

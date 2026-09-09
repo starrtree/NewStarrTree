@@ -63,4 +63,4 @@ npm run lab:verify
 npm run build
 ```
 
-The lab is independent of the opening model. Its still fallbacks and source geometry are included. Browser and physical iPhone validation remain pending; see the lab guide for the checks and current test evidence.
+The lab is independent of the opening model. Its still fallbacks and source geometry are included. Live browser controls and image previews have been checked. GPU rendering and physical iPhone validation remain pending; see the lab guide for the evidence and limitations.
