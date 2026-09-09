@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "brandReferences": [
+    "Starr_Tree_Spatial_Blueprint.pptx",
+    "The_StarrTree_Blueprint.pptx"
+  ],
+  "profiles": {
+    "full": {
+      "label": "Full",
+      "dpr": 1.5,
+      "particles": 420,
+      "tubeSegments": 46,
+      "radialSegments": 6,
+      "leaves": 110,
+      "maxTriangles": 90000,
+      "maxDrawCalls": 110,
+      "targetFPS": 50
+    },
+    "lite": {
+      "label": "Lite",
+      "dpr": 1,
+      "particles": 110,
+      "tubeSegments": 25,
+      "radialSegments": 4,
+      "leaves": 48,
+      "maxTriangles": 35000,
+      "maxDrawCalls": 80,
+      "targetFPS": 30
+    }
+  },
+  "costNote": "Scene cost is measured from mounted geometry, not an isolated-asset GPU benchmark. Network figures include the complete navigation system. Environment draws are additional.",
+  "assets": [
+    {
+      "name": "StarrSeed",
+      "concept": "A sixfold living capsule holding a luminous core, a Fresnel shell, botanical ribs and responding orbital paths.",
+      "symbolism": "One source of creative energy generates many branches.",
+      "technology": "Procedural SphereGeometry, merged ribs, custom GLSL shell, additive light plane.",
+      "interaction": "Pointer bends orbital orientation; activation expands shell and releases particles and six destination objects; growth reveals roots.",
+      "websiteUse": "Homepage origin, navigation portal and chapter transition.",
+      "cost": {
+        "full": {
+          "triangles": 26654,
+          "estimatedDraws": 18,
+          "geometryBytes": 778892
+        },
+        "lite": {
+          "triangles": 10998,
+          "estimatedDraws": 18,
+          "geometryBytes": 344316
+        }
+      },
+      "mobile": "24-segment shell, DPR 1, 24 release particles; still fallback.",
+      "source": "src/assets-lab/objects/StarrSeed.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Living Root Network",
+      "concept": "36 procedural golden paths carrying energy downward.",
+      "symbolism": "Purpose and values feed every output.",
+      "technology": "Deterministic CatmullRom curves, merged TubeGeometry, branch/growth vertex attributes, GLSL.",
+      "interaction": "Controlled growth clips the mesh progressively; selection routes a brighter moving signal.",
+      "websiteUse": "Navigation, progress and transition geometry.",
+      "cost": {
+        "full": {
+          "triangles": 47550,
+          "estimatedDraws": 62,
+          "geometryBytes": 1282156
+        },
+        "lite": {
+          "triangles": 23078,
+          "estimatedDraws": 62,
+          "geometryBytes": 666284
+        }
+      },
+      "mobile": "25 curve segments, 4 radial sides; same selection and growth semantics.",
+      "source": "src/assets-lab/objects/LivingNetwork.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Celestial Branch Network",
+      "concept": "18 branching paths terminating in six creative domains, with instanced curved leaves.",
+      "symbolism": "Many forms of expression connect to one trunk.",
+      "technology": "Batched tube meshes and instanced leaf surfaces.",
+      "interaction": "Domain hover, keyboard focus and selection change the branch illumination.",
+      "websiteUse": "Category navigation and project discovery.",
+      "cost": {
+        "full": {
+          "triangles": 47550,
+          "estimatedDraws": 62,
+          "geometryBytes": 1282156
+        },
+        "lite": {
+          "triangles": 23078,
+          "estimatedDraws": 62,
+          "geometryBytes": 666284
+        }
+      },
+      "mobile": "48 instanced leaves; HTML controls mirror canvas destinations.",
+      "source": "src/assets-lab/objects/LivingNetwork.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Resonance Bloom",
+      "domain": "Music",
+      "concept": "An orbital instrument. Brass petals surround a resonant heart.",
+      "symbolism": "Expression propagates through the whole tree.",
+      "technology": "Procedural React Three Fiber geometry; repeated parts instanced where useful.",
+      "interaction": "Pluck the bloom. Its rings breathe with a synthesized chord.",
+      "websiteUse": "Album gateway, track selection, audio player.",
+      "cost": {
+        "full": {
+          "triangles": 2826,
+          "estimatedDraws": 10,
+          "geometryBytes": 69260
+        },
+        "lite": {
+          "triangles": 2826,
+          "estimatedDraws": 10,
+          "geometryBytes": 69260
+        }
+      },
+      "mobile": "Shared single canvas, DPR cap, still asset; sound opt-in.",
+      "source": "src/assets-lab/objects/EcosystemObjects.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Neural Geode",
+      "domain": "AI",
+      "concept": "An open crystal with a branching lattice inside.",
+      "symbolism": "Intelligence grows through connected ideas.",
+      "technology": "Procedural React Three Fiber geometry; repeated parts instanced where useful.",
+      "interaction": "Select it to illuminate its neural pathways.",
+      "websiteUse": "AI services, experiments, automation projects.",
+      "cost": {
+        "full": {
+          "triangles": 158,
+          "estimatedDraws": 4,
+          "geometryBytes": 10508
+        },
+        "lite": {
+          "triangles": 158,
+          "estimatedDraws": 4,
+          "geometryBytes": 10508
+        }
+      },
+      "mobile": "Shared single canvas, DPR cap, still asset; sound opt-in.",
+      "source": "src/assets-lab/objects/EcosystemObjects.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Light Loom",
+      "domain": "Design / Film",
+      "concept": "Folded apertures weaving a ribbon of light.",
+      "symbolism": "A frame turns light into a human story.",
+      "technology": "Procedural React Three Fiber geometry; repeated parts instanced where useful.",
+      "interaction": "Its nested apertures counter-rotate as you move.",
+      "websiteUse": "Film reels, design case studies, visual portfolios.",
+      "cost": {
+        "full": {
+          "triangles": 242,
+          "estimatedDraws": 11,
+          "geometryBytes": 10060
+        },
+        "lite": {
+          "triangles": 242,
+          "estimatedDraws": 11,
+          "geometryBytes": 10060
+        }
+      },
+      "mobile": "Shared single canvas, DPR cap, still asset; sound opt-in.",
+      "source": "src/assets-lab/objects/EcosystemObjects.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Tectonic Engine",
+      "domain": "Engineering",
+      "concept": "An inhabitable machine rising from faceted bedrock.",
+      "symbolism": "Structure gives imagination a physical form.",
+      "technology": "Procedural React Three Fiber geometry; repeated parts instanced where useful.",
+      "interaction": "Activate it to separate the engine into an exploded assembly.",
+      "websiteUse": "Built work, systems diagrams, engineering projects.",
+      "cost": {
+        "full": {
+          "triangles": 390,
+          "estimatedDraws": 9,
+          "geometryBytes": 9572
+        },
+        "lite": {
+          "triangles": 390,
+          "estimatedDraws": 9,
+          "geometryBytes": 9572
+        }
+      },
+      "mobile": "Shared single canvas, DPR cap, still asset; sound opt-in.",
+      "source": "src/assets-lab/objects/EcosystemObjects.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Discovery Helix",
+      "domain": "Education",
+      "concept": "Seeds ascending a double helix toward a new light.",
+      "symbolism": "Learning makes another level of growth possible.",
+      "technology": "Procedural React Three Fiber geometry; repeated parts instanced where useful.",
+      "interaction": "Energy climbs between the paired seed strands.",
+      "websiteUse": "Workshops, curriculum, student creations.",
+      "cost": {
+        "full": {
+          "triangles": 1414,
+          "estimatedDraws": 4,
+          "geometryBytes": 41708
+        },
+        "lite": {
+          "triangles": 1414,
+          "estimatedDraws": 4,
+          "geometryBytes": 41708
+        }
+      },
+      "mobile": "Shared single canvas, DPR cap, still asset; sound opt-in.",
+      "source": "src/assets-lab/objects/EcosystemObjects.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Mycelium Commons",
+      "domain": "Community",
+      "concept": "Independent luminous pods joined by a living mycelium.",
+      "symbolism": "Individual lights strengthen a shared network.",
+      "technology": "Procedural React Three Fiber geometry; repeated parts instanced where useful.",
+      "interaction": "Pods gather when selected and transmit a shared pulse.",
+      "websiteUse": "Collaborations, TIMELESS, community projects.",
+      "cost": {
+        "full": {
+          "triangles": 1542,
+          "estimatedDraws": 10,
+          "geometryBytes": 65204
+        },
+        "lite": {
+          "triangles": 1542,
+          "estimatedDraws": 10,
+          "geometryBytes": 65204
+        }
+      },
+      "mobile": "Shared single canvas, DPR cap, still asset; sound opt-in.",
+      "source": "src/assets-lab/objects/EcosystemObjects.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Floating Terrestrial World",
+      "concept": "Basalt terrain, mineral pool, shader waterfall, living canopy, crystals and architectural gateway.",
+      "symbolism": "Creative work becomes a place to inhabit.",
+      "technology": "Deformed IcosahedronGeometry, vertex colors, instanced canopy, transparent GLSL water.",
+      "interaction": "Growth reveals the tree; pointer and tilt change the viewing angle.",
+      "websiteUse": "Project containers and spatial sections.",
+      "cost": {
+        "full": {
+          "triangles": 34808,
+          "estimatedDraws": 12,
+          "geometryBytes": 928920
+        },
+        "lite": {
+          "triangles": 13220,
+          "estimatedDraws": 12,
+          "geometryBytes": 371832
+        }
+      },
+      "mobile": "Lower terrain detail, same water shader, reduced tree geometry.",
+      "source": "src/assets-lab/objects/FloatingWorld.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Environmental Layers",
+      "concept": "Dark atmospheric field, distant particles and close botanical silhouettes.",
+      "symbolism": "A living system has scale beyond its central object.",
+      "technology": "Background fragment shader, single Points buffer, independent foreground group.",
+      "interaction": "Pointer and relative device orientation produce different depth shifts.",
+      "websiteUse": "Shared scene atmosphere and depth.",
+      "cost": {
+        "full": {
+          "particles": 420,
+          "estimatedDraws": 6
+        },
+        "lite": {
+          "particles": 110,
+          "estimatedDraws": 6
+        }
+      },
+      "mobile": "DPR 1, reduced particles, demand rendering when paused or hidden.",
+      "source": "src/assets-lab/AssetScene.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Cinematic Lifecycle",
+      "concept": "Nine states from void through living structure to cosmos.",
+      "symbolism": "Ideas become work and reconnect to something larger.",
+      "technology": "Shared controlled progress, procedural reveals and camera interpolation.",
+      "interaction": "Chapter buttons, keyboard range input and wheel scrubbing.",
+      "websiteUse": "Scroll journey; optional later generated atmospheric plates.",
+      "cost": {
+        "full": {
+          "triangles": 48150,
+          "estimatedDraws": 71,
+          "geometryBytes": 1320292
+        },
+        "lite": {
+          "triangles": 23578,
+          "estimatedDraws": 71,
+          "geometryBytes": 691220
+        }
+      },
+      "mobile": "Touch/keyboard scrubber and still fallback; no video dependency.",
+      "source": "src/assets-lab/AssetScene.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Seed Energy Release",
+      "concept": "Transient energy points travel from a core to six destinations.",
+      "symbolism": "An activated idea becomes connected possibilities.",
+      "technology": "Bounded point buffer, eased destination groups.",
+      "interaction": "Triggered by seed activation; ends after 3 seconds.",
+      "websiteUse": "Navigation reveal and state transitions.",
+      "cost": {
+        "full": {
+          "particles": 72,
+          "estimatedDraws": 1
+        },
+        "lite": {
+          "particles": 24,
+          "estimatedDraws": 1
+        }
+      },
+      "mobile": "Reduced point count; no animation when motion is paused.",
+      "source": "src/assets-lab/objects/EnergyRelease.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Orbital loader",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Star cursor",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Follows a fine pointer; disabled for reduced motion and coarse pointers.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/StarCursor.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Constellation connector",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Energy divider",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Root progress",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Portal button",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Hover halo",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Selection state",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Celestial tooltip",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    },
+    {
+      "name": "Living card",
+      "concept": "Native StarrTree interaction primitive with a shared gold/light vocabulary.",
+      "symbolism": "Interface states participate in the living system.",
+      "technology": "Semantic HTML, controlled range inputs, small SVG path or scoped CSS.",
+      "interaction": "Focus, hover, selection or controlled progress appropriate to the primitive.",
+      "websiteUse": "Reusable interface element.",
+      "cost": {
+        "gpuDraws": 0,
+        "externalTextures": 0
+      },
+      "mobile": "Native semantic controls; touch and focus alternatives; reduced-motion CSS.",
+      "source": "src/assets-lab/ui/Primitives.jsx",
+      "status": "prototype; art direction and browser/device review pending"
+    }
+  ]
+}

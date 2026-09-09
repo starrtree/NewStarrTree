@@ -1,0 +1,359 @@
+{
+  "date": "2026-09-09T00:02:12.417Z",
+  "browser": "Blocked by cloud browser URL security policy. No live browser, FPS, or physical iPhone result is claimed.",
+  "scenes": [
+    {
+      "profile": "full",
+      "name": "seed",
+      "drawCallsEstimate": 18,
+      "triangles": 26654,
+      "geometryBytes": 778892,
+      "particles": 0,
+      "uniqueGeometries": 18
+    },
+    {
+      "profile": "full",
+      "name": "network",
+      "drawCallsEstimate": 62,
+      "triangles": 47550,
+      "geometryBytes": 1282156,
+      "particles": 0,
+      "uniqueGeometries": 62
+    },
+    {
+      "profile": "full",
+      "name": "terrain",
+      "drawCallsEstimate": 12,
+      "triangles": 34808,
+      "geometryBytes": 928920,
+      "particles": 0,
+      "uniqueGeometries": 12
+    },
+    {
+      "profile": "full",
+      "name": "seed-open",
+      "drawCallsEstimate": 61,
+      "triangles": 33214,
+      "geometryBytes": 985228,
+      "particles": 72,
+      "uniqueGeometries": 61
+    },
+    {
+      "profile": "full",
+      "name": "domain-music",
+      "drawCallsEstimate": 10,
+      "triangles": 2826,
+      "geometryBytes": 69260,
+      "particles": 0,
+      "uniqueGeometries": 10
+    },
+    {
+      "profile": "full",
+      "name": "domain-ai",
+      "drawCallsEstimate": 4,
+      "triangles": 158,
+      "geometryBytes": 10508,
+      "particles": 0,
+      "uniqueGeometries": 4
+    },
+    {
+      "profile": "full",
+      "name": "domain-film",
+      "drawCallsEstimate": 11,
+      "triangles": 242,
+      "geometryBytes": 10060,
+      "particles": 0,
+      "uniqueGeometries": 11
+    },
+    {
+      "profile": "full",
+      "name": "domain-engineering",
+      "drawCallsEstimate": 9,
+      "triangles": 390,
+      "geometryBytes": 9572,
+      "particles": 0,
+      "uniqueGeometries": 9
+    },
+    {
+      "profile": "full",
+      "name": "domain-education",
+      "drawCallsEstimate": 4,
+      "triangles": 1414,
+      "geometryBytes": 41708,
+      "particles": 0,
+      "uniqueGeometries": 4
+    },
+    {
+      "profile": "full",
+      "name": "domain-community",
+      "drawCallsEstimate": 10,
+      "triangles": 1542,
+      "geometryBytes": 65204,
+      "particles": 0,
+      "uniqueGeometries": 10
+    },
+    {
+      "profile": "full",
+      "name": "chapter-0",
+      "drawCallsEstimate": 20,
+      "triangles": 40990,
+      "geometryBytes": 1076684,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "full",
+      "name": "chapter-1",
+      "drawCallsEstimate": 20,
+      "triangles": 40990,
+      "geometryBytes": 1076684,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "full",
+      "name": "chapter-2",
+      "drawCallsEstimate": 20,
+      "triangles": 40990,
+      "geometryBytes": 1076684,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "full",
+      "name": "chapter-3",
+      "drawCallsEstimate": 20,
+      "triangles": 40990,
+      "geometryBytes": 1076684,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "full",
+      "name": "chapter-4",
+      "drawCallsEstimate": 20,
+      "triangles": 40990,
+      "geometryBytes": 1076684,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "full",
+      "name": "chapter-5",
+      "drawCallsEstimate": 62,
+      "triangles": 47550,
+      "geometryBytes": 1282156,
+      "particles": 0,
+      "uniqueGeometries": 62
+    },
+    {
+      "profile": "full",
+      "name": "chapter-6",
+      "drawCallsEstimate": 71,
+      "triangles": 48150,
+      "geometryBytes": 1320292,
+      "particles": 0,
+      "uniqueGeometries": 71
+    },
+    {
+      "profile": "full",
+      "name": "chapter-7",
+      "drawCallsEstimate": 71,
+      "triangles": 48150,
+      "geometryBytes": 1320292,
+      "particles": 0,
+      "uniqueGeometries": 71
+    },
+    {
+      "profile": "full",
+      "name": "chapter-8",
+      "drawCallsEstimate": 71,
+      "triangles": 48150,
+      "geometryBytes": 1320292,
+      "particles": 0,
+      "uniqueGeometries": 71
+    },
+    {
+      "profile": "lite",
+      "name": "seed",
+      "drawCallsEstimate": 18,
+      "triangles": 10998,
+      "geometryBytes": 344316,
+      "particles": 0,
+      "uniqueGeometries": 18
+    },
+    {
+      "profile": "lite",
+      "name": "network",
+      "drawCallsEstimate": 62,
+      "triangles": 23078,
+      "geometryBytes": 666284,
+      "particles": 0,
+      "uniqueGeometries": 62
+    },
+    {
+      "profile": "lite",
+      "name": "terrain",
+      "drawCallsEstimate": 12,
+      "triangles": 13220,
+      "geometryBytes": 371832,
+      "particles": 0,
+      "uniqueGeometries": 12
+    },
+    {
+      "profile": "lite",
+      "name": "seed-open",
+      "drawCallsEstimate": 61,
+      "triangles": 17558,
+      "geometryBytes": 550076,
+      "particles": 24,
+      "uniqueGeometries": 61
+    },
+    {
+      "profile": "lite",
+      "name": "domain-music",
+      "drawCallsEstimate": 10,
+      "triangles": 2826,
+      "geometryBytes": 69260,
+      "particles": 0,
+      "uniqueGeometries": 10
+    },
+    {
+      "profile": "lite",
+      "name": "domain-ai",
+      "drawCallsEstimate": 4,
+      "triangles": 158,
+      "geometryBytes": 10508,
+      "particles": 0,
+      "uniqueGeometries": 4
+    },
+    {
+      "profile": "lite",
+      "name": "domain-film",
+      "drawCallsEstimate": 11,
+      "triangles": 242,
+      "geometryBytes": 10060,
+      "particles": 0,
+      "uniqueGeometries": 11
+    },
+    {
+      "profile": "lite",
+      "name": "domain-engineering",
+      "drawCallsEstimate": 9,
+      "triangles": 390,
+      "geometryBytes": 9572,
+      "particles": 0,
+      "uniqueGeometries": 9
+    },
+    {
+      "profile": "lite",
+      "name": "domain-education",
+      "drawCallsEstimate": 4,
+      "triangles": 1414,
+      "geometryBytes": 41708,
+      "particles": 0,
+      "uniqueGeometries": 4
+    },
+    {
+      "profile": "lite",
+      "name": "domain-community",
+      "drawCallsEstimate": 10,
+      "triangles": 1542,
+      "geometryBytes": 65204,
+      "particles": 0,
+      "uniqueGeometries": 10
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-0",
+      "drawCallsEstimate": 20,
+      "triangles": 16518,
+      "geometryBytes": 460812,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-1",
+      "drawCallsEstimate": 20,
+      "triangles": 16518,
+      "geometryBytes": 460812,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-2",
+      "drawCallsEstimate": 20,
+      "triangles": 16518,
+      "geometryBytes": 460812,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-3",
+      "drawCallsEstimate": 20,
+      "triangles": 16518,
+      "geometryBytes": 460812,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-4",
+      "drawCallsEstimate": 20,
+      "triangles": 16518,
+      "geometryBytes": 460812,
+      "particles": 0,
+      "uniqueGeometries": 20
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-5",
+      "drawCallsEstimate": 62,
+      "triangles": 23078,
+      "geometryBytes": 666284,
+      "particles": 0,
+      "uniqueGeometries": 62
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-6",
+      "drawCallsEstimate": 71,
+      "triangles": 23578,
+      "geometryBytes": 691220,
+      "particles": 0,
+      "uniqueGeometries": 71
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-7",
+      "drawCallsEstimate": 71,
+      "triangles": 23578,
+      "geometryBytes": 691220,
+      "particles": 0,
+      "uniqueGeometries": 71
+    },
+    {
+      "profile": "lite",
+      "name": "chapter-8",
+      "drawCallsEstimate": 71,
+      "triangles": 23578,
+      "geometryBytes": 691220,
+      "particles": 0,
+      "uniqueGeometries": 71
+    }
+  ],
+  "tests": [
+    "Root and GitHub Pages subpath asset URLs resolve with or without trailing slash",
+    "Six distinct branch destinations and 36 deterministic root paths",
+    "full/seed: seed click fires activation; root shader responds to growth state",
+    "full/seed-open: seed click fires activation; root shader responds to growth state",
+    "lite/seed: seed click fires activation; root shader responds to growth state",
+    "lite/seed-open: seed click fires activation; root shader responds to growth state",
+    "All six domain objects route their own selection callbacks",
+    "All nine journey phases mount and advance in both profiles",
+    "All geometry has finite positions and stays within triangle/draw budgets (8 environment draws reserved)"
+  ]
+}

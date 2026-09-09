@@ -1,0 +1,21 @@
+{
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "resolution": [
+    1100,
+    1100
+  ],
+  "customShaderProgramsCompiled": 5,
+  "provenance": "Native EGL renders of mounted R3F geometry. Reference standard-material lighting. Not browser screenshots.",
+  "images": [
+    "domain-ai",
+    "domain-community",
+    "domain-education",
+    "domain-engineering",
+    "domain-film",
+    "domain-music",
+    "network",
+    "seed-open",
+    "seed",
+    "terrain"
+  ]
+}
